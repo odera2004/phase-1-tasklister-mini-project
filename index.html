@@ -7,16 +7,38 @@
 </head>
 <body>
   <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+    <h1>Movie Watchlist for weekend</h1>
 
     <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
+      <label for="new-task-description">movie description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
+      <input type="submit" value="Submitt description">
+      <input type="date" id="dueDate" required>
+    </form><br>
 
+    <div class="form-group">
+      <label for="color">Text color:</label>
+      <select id="color" required>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+          <option value="gray">Gray</option>
+          <option value="black">Black</option>
+          <option value="blue">Blue</option> 
+      </select>
+    </div><br></br>
+    <div class="form-group">
+      <label for="priority">Priority:</label>
+      <select id="priority" required>
+          <option value="1">1 (Highest)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Lowest)</option>
+      </select>
+    </div>
+  </div>
     <div id="list">
-      <h2>My Todos:</h2>
+      <h2>submission:</h2>
       <ul id="tasks">
       </ul>
     </div>
